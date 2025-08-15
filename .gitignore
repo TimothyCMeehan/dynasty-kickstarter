@@ -1,0 +1,35 @@
+# ── OS cruft
+.DS_Store
+Thumbs.db
+
+# ── Editors / IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# ── Temporary / backup files
+*.tmp
+*.temp
+*.bak
+*~
+.~lock.*
+
+# ── Build / release artifacts (if you export zips)
+releases/
+dist/
+build/
+*.zip
+
+# ── Image editing source files (keep DDS/PNG that the game uses)
+# If you keep PSD/XCF sources outside the mod or don't want them in git:
+# Uncomment the next lines if desired.
+# *.psd
+# *.xcf
+
+# ── Notes / scratch
+notes/
+*.todo
+TODO.md
+
+# ── Paradox junk that sometimes sneaks in from copy/paste
+desktop.ini
