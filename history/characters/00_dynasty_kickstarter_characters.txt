@@ -1,0 +1,36 @@
+﻿900001 = {
+    name = "Eva"
+    female = yes
+
+    # Core identity
+    culture = norse
+    faith = norse_pagan
+
+    # Appearance (from our dna_data entry)
+    dna = 900001_eva_kickstarter
+
+    # Personality & prowess
+    trait = intellect_good_2
+    trait = gregarious
+    trait = ambitious
+	trait = temperate
+    # (Optional: balance tweaks later—e.g., beauty_good_2, athletic, etc.)
+
+    diplomacy = 14
+    martial = 6
+    stewardship = 12
+    intrigue = 8
+    learning = 10
+
+    disallow_random_traits = yes
+
+    # Life dates
+    848.1.1 = { birth = yes }      # ~19 at 867 start
+    # (We can add death later if you want to lock a date)
+	948.1.1 = { death = yes }
+
+    # Optional: sexuality, health, fertility
+    sexuality = heterosexual
+    # health = 0
+    # fertility = 1.0
+}
