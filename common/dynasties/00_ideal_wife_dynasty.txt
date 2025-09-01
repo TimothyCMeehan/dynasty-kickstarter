@@ -1,0 +1,5 @@
+100001 = {
+    name = "dynn_Aelis"
+    prefix = "dynnp_de"
+    culture = "norse"
+}

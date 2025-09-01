@@ -1,0 +1,9 @@
+100001 = {
+    pattern = "pattern_solid.dds"
+    color1 = "blue"
+    color2 = "gold"
+    colored_emblem = {
+        texture = "ce_cross_01.dds"
+        color1 = "white"
+    }
+}

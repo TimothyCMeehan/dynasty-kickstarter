@@ -6,6 +6,8 @@
     culture = norse
     faith = norse_pagan
 
+    dynasty = 100001
+
     # Appearance (from our dna_data entry)
     dna = 900001_eva_kickstarter
 
