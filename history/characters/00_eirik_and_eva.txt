@@ -1,0 +1,258 @@
+# Eirik's father — a battle-scarred thegn with a mind for war and a heart hardened by endless raids.
+910009 = {
+    name = "Torgils"
+    culture = norse
+    faith = norse_pagan
+	dynasty = 100000
+
+    trait = brave
+    trait = strong
+    trait = stubborn
+    trait = education_martial_2
+
+    diplomacy = 7
+    martial = 16
+    stewardship = 6
+    intrigue = 5
+    learning = 6
+
+    disallow_random_traits = yes
+
+    808.1.1 = { birth = yes }
+    832.1.1 = { add_spouse = 910010 }
+    862.1.1 = { death = yes }
+}
+
+# Eirik's mother — a wise woman from a coastal clan, known for her sharp wit and guidance to the jarls of the fjord.
+910010 = {
+    name = "Freydis"
+    female = yes
+    culture = norse
+    faith = norse_pagan
+
+    trait = intellect_good_1
+    trait = diligent
+    trait = temperate
+    trait = ambitious
+	trait = education_learning_3
+
+    diplomacy = 11
+    martial = 6
+    stewardship = 10
+    intrigue = 9
+    learning = 13
+
+    disallow_random_traits = yes
+
+    812.1.1 = { birth = yes }
+    832.1.1 = { add_spouse = 910009 }
+    872.1.1 = { death = yes }
+}
+
+# Eva's father — a calculating landholder who expanded his estate through cunning deals and calculated risks.
+910011 = {
+    name = "Sigurd"
+    culture = norse
+    faith = norse_pagan
+
+	dynasty = 100001
+
+    trait = shrewd
+    trait = temperate
+    trait = diligent
+	trait = stubborn
+	trait = intellect_good_1
+	trait = education_stewardship_3
+
+    diplomacy = 7
+    martial = 9
+    stewardship = 7
+    intrigue = 5
+    learning = 7
+	prowess = 5
+
+    disallow_random_traits = yes
+
+    811.1.1 = { birth = yes }
+    833.1.1 = { add_spouse = 910012 }
+    871.1.1 = { death = yes }
+}
+
+# Eva's mother — a politically savvy matron with deep roots in courtly diplomacy.
+910012 = {
+    name = "Kari"
+    female = yes
+    culture = norse
+    faith = norse_pagan
+
+    trait = gregarious
+	trait = intellect_good_1
+    trait = beauty_good_1
+    trait = ambitious
+	trait = calm
+	trait = education_diplomacy_3
+
+    diplomacy = 14
+    martial = 4
+    stewardship = 12
+    intrigue = 11
+    learning = 10
+
+    disallow_random_traits = yes
+
+    814.1.1 = { birth = yes }
+    833.1.1 = { add_spouse = 910011 }
+    874.1.1 = { death = yes }
+}
+
+# Eva's eldest brother — thoughtful and studious, groomed as heir to Sigurd's estate.
+910013 = {
+    name = "Leif"
+    culture = norse
+    faith = norse_pagan
+
+	dynasty = 100001
+
+    father = 910011
+    mother = 910012
+
+    trait = intellect_good_2
+    trait = patient
+	trait = ambitious
+	trait = diligent
+    trait = education_learning_3
+
+    diplomacy = 9
+    martial = 6
+    stewardship = 13
+    intrigue = 7
+    learning = 12
+
+    disallow_random_traits = yes
+
+    842.1.1 = { birth = yes }
+    948.1.1 = { death = yes }
+
+    sexuality = heterosexual
+}
+
+# Eva's second brother — sharp-minded and striking, the favored diplomat of the siblings.
+910014 = {
+    name = "Hakon"
+    culture = norse
+    faith = norse_pagan
+
+	dynasty = 100001
+
+    father = 910011
+    mother = 910012
+
+    trait = intellect_good_1
+    trait = beauty_good_1
+    trait = gregarious
+	trait = patient
+	trait = humble
+    trait = education_diplomacy_3
+
+    diplomacy = 13
+    martial = 5
+    stewardship = 10
+    intrigue = 9
+    learning = 10
+
+    disallow_random_traits = yes
+
+    844.1.1 = { birth = yes }
+    948.1.1 = { death = yes }
+
+    sexuality = heterosexual
+}
+
+900006 = {
+    name = "Eirik"
+
+    # Core identity
+    culture = norse
+    faith = norse_pagan
+
+    dynasty = 100000
+
+    # Appearance: random dna for first draft
+    dna = 900006_eirik
+
+
+    # Personality & prowess
+    trait = intellect_good_1
+    trait = brave
+    trait = diligent
+    trait = temperate
+    trait = education_martial_2
+    trait = reaver
+
+    diplomacy = 6
+    martial = 8
+    stewardship = 7
+    intrigue = 5
+    learning = 7
+	prowess = 8
+
+    father = 910009
+    mother = 910010
+
+    disallow_random_traits = yes
+
+    848.1.1 = { birth = yes }      # ~21 at 867 start
+
+    866.1.1 = { add_spouse = 900001 }
+
+    948.1.1 = { death = yes }
+
+    sexuality = heterosexual
+    
+}
+
+900001 = {
+    name = "Eva"
+    female = yes
+
+    # Core identity
+    culture = norse
+    faith = norse_pagan
+
+    dynasty = 100001
+
+    # Appearance (from our dna_data entry)
+    dna = 900001_eva_kickstarter
+
+    # Personality & prowess
+    trait = intellect_good_2
+    trait = gregarious
+    trait = ambitious
+    trait = temperate
+    trait = education_stewardship_3
+    # (Optional: balance tweaks later—e.g., beauty_good_2, athletic, etc.)
+
+    diplomacy = 14
+    martial = 6
+    stewardship = 12
+    intrigue = 8
+    learning = 10
+
+    father = 910011
+    mother = 910012
+
+    disallow_random_traits = yes
+
+    # Life dates
+    848.1.1 = { birth = yes }      # ~19 at 867 start
+
+    866.1.1 = { add_spouse = 900006 }
+    # (We can add death later if you want to lock a date)
+	948.1.1 = { death = yes }
+
+    # Optional: sexuality, health, fertility
+    sexuality = heterosexual
+    # health = 0
+    # fertility = 1.0
+    
+}

@@ -1,0 +1,271 @@
+# Halstein's father — once a renowned mountain warrior who ruled a remote valley, now long passed into legend.
+910005 = {
+    name = "Skjalg"
+    culture = norse
+    faith = norse_pagan
+
+    trait = giant
+    trait = strong
+    trait = brave
+    trait = stubborn
+	trait = education_martial_3
+	trait = physique_good_1
+
+    diplomacy = 6
+    martial = 14
+    stewardship = 9
+    intrigue = 4
+    learning = 5
+
+    disallow_random_traits = yes
+
+    810.1.1 = { birth = yes }
+    835.1.1 = { add_spouse = 910006 }
+    860.1.1 = { death = yes }
+}
+
+# Halstein's mother — a quiet scholar with ancient blood, descended from a forgotten line of highland mystics.
+910006 = {
+    name = "Inga"
+    female = yes
+    culture = norse
+    faith = norse_pagan
+
+    trait = giant
+    trait = physique_good_1
+    trait = patient
+	trait = temperate
+	trait = calm
+    trait = intellect_good_1
+	trait = education_learning_3
+
+    diplomacy = 10
+    martial = 3
+    stewardship = 13
+    intrigue = 6
+    learning = 12
+
+    disallow_random_traits = yes
+
+    815.1.1 = { birth = yes }
+    835.1.1 = { add_spouse = 910005 }
+    870.1.1 = { death = yes }
+}
+
+# Ylva's father — a reclusive healer known for taming a wild boar with only a stare.
+910007 = {
+    name = "Brandr"
+    culture = norse
+    faith = norse_pagan
+
+    trait = giant
+    trait = physique_good_2
+    trait = calm
+	trait = temperate
+    trait = diligent
+	trait = education_learning_3
+
+    diplomacy = 7
+    martial = 8
+    stewardship = 11
+    intrigue = 5
+    learning = 10
+
+    disallow_random_traits = yes
+
+    812.1.1 = { birth = yes }
+    836.1.1 = { add_spouse = 910008 }
+	867.1.1 = { employer = 910011 }
+    872.1.1 = { death = yes }
+}
+
+# Ylva's mother — a gentle giantess midwife whose lullabies are still whispered in mountain villages.
+910008 = {
+    name = "Thora"
+    female = yes
+    culture = norse
+    faith = norse_pagan
+
+    trait = giant
+    trait = physique_good_1
+    trait = compassionate
+	trait = gregarious
+	trait = patient
+	trait = education_diplomacy_3
+    trait = poet
+
+    diplomacy = 12
+    martial = 2
+    stewardship = 10
+    intrigue = 6
+    learning = 14
+
+    disallow_random_traits = yes
+
+    816.1.1 = { birth = yes }
+    836.1.1 = { add_spouse = 910007 }
+    875.1.1 = { death = yes }
+}
+
+ # Halstein’s younger brother — strong-willed and martial-minded, he forges his path through skill at arms rather than giant blood.
+900017 = {
+    name = "Egil"
+    male = yes
+
+    father = 910005
+    mother = 910006
+
+    culture = norse
+    faith = norse_pagan
+
+    dynasty = 100002
+
+	trait = giant
+    trait = brave
+    trait = wrathful
+    trait = stubborn
+    trait = education_martial_3
+	trait = aggressive_attacker
+    trait = berserker
+
+    diplomacy = 5
+    martial = 9
+    stewardship = 6
+    intrigue = 4
+    learning = 5
+    prowess = 7
+
+    disallow_random_traits = yes
+
+    sexuality = heterosexual
+
+    851.1.1 = { birth = yes }
+    948.1.1 = { death = yes }
+}
+
+# Halstein’s sister — born of giant blood and mystic stock, she blends strength with introspection.
+900016 = {
+    name = "Runa"
+    female = yes
+
+    father = 910005
+    mother = 910006
+
+    culture = norse
+    faith = norse_pagan
+
+    dynasty = 100002
+
+    trait = giant
+    trait = physique_good_1
+    trait = patient
+    trait = temperate
+    trait = diligent
+    trait = education_learning_3
+
+    diplomacy = 6
+    martial = 3
+    stewardship = 7
+    intrigue = 5
+    learning = 9
+    prowess = 4
+
+    disallow_random_traits = yes
+
+    sexuality = heterosexual
+
+    848.1.1 = { birth = yes }
+    948.1.1 = { death = yes }
+}
+
+900002 = {
+    name = "Halstein"
+
+    father = 910005
+    mother = 910006
+
+    # Core identity
+    culture = norse
+    faith = norse_pagan
+
+    dynasty = 100002
+
+    # Appearance (from our dna_data entry)
+    # dna = 900002_halstein_kickstarter
+
+    # Personality & prowess
+    trait = giant
+    trait = physique_good_1
+    trait = stubborn
+    trait = temperate
+    trait = lustful
+    trait = education_stewardship_4
+
+    diplomacy = 7
+    martial = 6
+    stewardship = 8
+    intrigue = 5
+    learning = 8
+	prowess = 5
+
+    disallow_random_traits = yes
+
+	sexuality = heterosexual
+
+    # Life dates
+    850.1.1 = { birth = yes }      # ~17 at 867 start
+
+    867.1.1 = {
+        employer = 900006
+        give_council_position = councillor_steward
+        effect = {
+            set_relation_friend = { reason = friend_generic_history target = character:900003 }
+            set_relation_friend = { reason = friend_generic_history target = character:900006 }
+        }
+    }
+
+    # Add death if needed later
+    948.1.1 = { death = yes }
+    # 866.1.1 = { add_spouse = 900004 }
+}
+
+900004 = {
+    name = "Ylva"
+    female = yes
+
+    father = 910007
+    mother = 910008
+
+    # Core identity
+    culture = norse
+    faith = norse_pagan
+
+    # Appearance: random dna for first draft
+    # dna = 900004_ylva_kickstarter
+
+    # Personality & prowess
+    trait = giant
+    trait = physique_good_2
+    trait = calm
+    trait = content
+    trait = lustful
+    trait = education_learning_3
+    trait = lifestyle_physician
+
+    diplomacy = 9
+    martial = 4
+    stewardship = 11
+    intrigue = 5
+    learning = 13
+
+    disallow_random_traits = yes
+
+    850.1.1 = { birth = yes }      # ~17 at 867 start
+    #867.1.1 = {
+        #employer = 900006
+    #}
+    948.1.1 = { death = yes }
+
+    sexuality = heterosexual
+    # 866.1.1 = { add_spouse = 900002 }
+}

@@ -1,5 +1,20 @@
+﻿100000 = {
+    name = "dynn_Bergskorr"
+    culture = "norse"
+}
+
 100001 = {
-    name = "dynn_Aelis"
+    name = "dynn_Þynning"
     prefix = "dynnp_de"
+    culture = "norse"
+}
+
+100002 = {
+    name = "dynn_Hallrskogr"
+    culture = "norse"
+}
+
+100003 = {
+    name = "dynn_Isblod"
     culture = "norse"
 }

@@ -1,0 +1,267 @@
+#
+# Jorundr was born beneath a winter eclipse, his pale skin and silver eyes seen as a sign from the old gods.
+# Though shunned by some in his youth, he forged his path through valor, saving a coastal village from slavers.
+# He earned the respect of his peers through stoic bravery and discipline.
+# His marriage to Yrsa was guided by prophecy—two touched by the north wind would bear a child destined for greatness.
+#
+910001 = {
+    name = "Jorundr"
+    culture = norse
+    faith = norse_pagan
+
+	dynasty = 100003
+
+    trait = albino
+    trait = beauty_good_1
+	trait = pure_blooded
+    trait = brave
+    trait = temperate
+	trait = diligent
+	trait = education_martial_3
+	trait = military_engineer
+
+    diplomacy = 10
+    martial = 12
+    stewardship = 8
+    intrigue = 6
+    learning = 7
+
+    disallow_random_traits = yes
+
+    820.1.1 = { birth = yes }
+    870.1.1 = { death = yes }
+    845.1.1 = { add_spouse = 910002 }
+}
+
+#
+# Yrsa descended from a long line of seeresses but carved her path through political ambition and social mastery.
+# Beautiful and brilliant, she walked confidently among jarls and mystics alike.
+# Her rumored moonborn bloodline gave her a mystique that complemented Jorundr’s cold strength.
+#
+910002 = {
+    name = "Yrsa"
+    female = yes
+    culture = norse
+    faith = norse_pagan
+
+	trait = albino
+    trait = beauty_good_1
+	trait = pure_blooded
+    trait = gregarious
+	trait = calm
+	trait = diligent
+    trait = intellect_good_1
+	trait = education_diplomacy_3
+
+    diplomacy = 12
+    martial = 5
+    stewardship = 10
+    intrigue = 9
+    learning = 11
+
+    disallow_random_traits = yes
+
+    822.1.1 = { birth = yes }
+    872.1.1 = { death = yes }
+    845.1.1 = { add_spouse = 910001 }
+}
+
+#
+# Ketill, the “White Fox of Vestland,” was an albino mastermind of politics and trade.
+# Feared for his ruthless logic and rumored cursed blood, he manipulated rivalries and pacts from the shadows.
+# His albinism and pure bloodline became a symbol of eerie clarity and shrewdness.
+#
+910003 = {
+    name = "Ketill"
+    culture = norse
+    faith = norse_pagan
+
+    trait = albino
+    trait = cynical
+	trait = diligent
+	trait = calm
+    trait = shrewd
+	trait = pure_blooded
+	trait = education_intrigue_3
+
+    diplomacy = 8
+    martial = 7
+    stewardship = 9
+    intrigue = 14
+    learning = 8
+
+    disallow_random_traits = yes
+
+    819.1.1 = { birth = yes }
+	844.1.1 = { add_spouse = 910004 }
+	867.1.1 = { employer = 910011 }
+    899.1.1 = { death = yes }
+    
+}
+
+#
+# Solveig, serene and wise, served as a midwife and herbalist known across mountain villages.
+# Her beauty was matched only by her calm demeanor and devotion to care and tradition.
+# Her lullabies, sung in ancient tongues, were said to soothe both infants and spirits.
+# She tempered Ketill’s ambition with compassion, raising Astrid with quiet strength and grace.
+#
+910004 = {
+    name = "Solveig"
+    female = yes
+    culture = norse
+    faith = norse_pagan
+	
+	trait = albino
+	trait = beauty_good_2
+    trait = calm
+    trait = diligent
+	trait = just
+	trait = pure_blooded
+	trait = education_learning_3
+
+    diplomacy = 13
+    martial = 4
+    stewardship = 12
+    intrigue = 10
+    learning = 10
+
+    disallow_random_traits = yes
+
+    823.1.1 = { birth = yes }
+    873.1.1 = { death = yes }
+    844.1.1 = { add_spouse = 910003 }
+}
+
+900003 = {
+    name = "Odo"
+
+    # Core identity
+    culture = norse
+    faith = norse_pagan
+
+    dynasty = 100003
+
+    father = 910001
+    mother = 910002
+
+    # Appearance (from our dna_data entry)
+    # dna = 900003_odo
+
+    # Personality & prowess
+    trait = albino
+    trait = beauty_good_1
+    trait = pure_blooded
+    trait = gregarious
+    trait = brave
+    trait = lustful
+    trait = education_martial_3
+    trait = military_engineer
+
+    diplomacy = 6
+    martial = 8
+    stewardship = 7
+    intrigue = 5
+    learning = 7
+    prowess = 9
+
+    disallow_random_traits = yes
+
+    sexuality = heterosexual
+
+    # Life dates
+    850.1.1 = { birth = yes }      # ~17 at 867 start
+    
+    867.1.1 = {
+        employer = 900006
+        give_council_position = councillor_marshal
+        effect = {
+            set_relation_friend = { reason = friend_generic_history target = character:900006 }
+
+                
+        }
+    }
+    # Add death if needed later
+    948.1.1 = { death = yes }
+    # 866.1.1 = { add_spouse = 900005 }
+}
+
+900005 = {
+    name = "Astrid"
+    female = yes
+
+    # Core identity
+    culture = norse
+    faith = norse_pagan
+
+    father = 910003
+    mother = 910004
+
+    # Appearance: random dna for first draft
+    # dna = 900005_astrid
+
+    # Personality & prowess
+    trait = albino
+    trait = beauty_good_2
+    trait = pure_blooded
+    trait = lustful
+    trait = brave
+    trait = calm
+    trait = education_intrigue_3
+
+    diplomacy = 14
+    martial = 6
+    stewardship = 7
+    intrigue = 16
+    learning = 9
+
+    disallow_random_traits = yes
+
+    850.1.1 = { birth = yes }      # ~19 at 867 start
+    #867.1.1 = {
+       # employer = 900006
+    #}
+    948.1.1 = { death = yes }
+
+    sexuality = heterosexual
+    # 866.1.1 = { add_spouse = 900003 }
+}
+
+900015 = {
+    name = "Eydis"
+    female = yes
+
+    # Core identity
+    culture = norse
+    faith = norse_pagan
+
+    dynasty = 100003
+
+    father = 910001
+    mother = 910002
+
+    # Appearance: random dna for first draft
+    # dna = 900007_eydis
+
+    # Personality & prowess
+    trait = albino
+    trait = beauty_good_1
+    trait = pure_blooded
+    trait = patient
+    trait = trusting
+    trait = diligent
+    trait = education_stewardship_3
+
+    diplomacy = 7
+    martial = 4
+    stewardship = 8
+    intrigue = 5
+    learning = 6
+    prowess = 3
+
+    disallow_random_traits = yes
+
+    sexuality = heterosexual
+
+    848.1.1 = { birth = yes }
+    948.1.1 = { death = yes }
+}

@@ -1,9 +1,95 @@
 100001 = {
-    pattern = "pattern_solid.dds"
-    color1 = "blue"
-    color2 = "gold"
-    colored_emblem = {
-        texture = "ce_cross_01.dds"
-        color1 = "white"
-    }
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=red
+	color3=yellow
+	colored_emblem={
+		color1=rgb { 163 191 193 }
+		color2=yellow
+		texture="ce_pagan_star_04.dds"
+		instance={
+			position={ 0.400000 0.340000 }
+			scale={ -0.650000 0.650000 }
+		}
+
+	}
+
 }
+
+100002 = {
+	pattern="pattern_vertical_split_01.dds"
+	color1=white
+	color2=white
+	color3=blue
+	colored_emblem={
+		color1=blue
+		color2=blue
+		texture="ce_bear_passant.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.810000 0.810000 }
+		}
+
+	}
+
+}
+
+100003 = {
+	pattern="pattern_solid.dds"
+	color1=black
+	color2=blue
+	color3=white
+	colored_emblem={
+		color1=rgb { 90 62 62 }
+		color2=white
+		texture="ce_triskel_02.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=red
+		texture="ce_wolf_head.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+		}
+
+	}
+
+}
+
+100000 = {
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=yellow
+	color3=black
+	colored_emblem={
+		color1=black
+		color2=yellow
+		texture="ce_ship_longship.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.820000 0.820000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 133 81 5 }
+		color2=black
+		texture="ce_gankyil_chakra.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.820000 0.820000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+
